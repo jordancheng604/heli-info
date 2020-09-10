@@ -12,16 +12,16 @@ class Main extends React.Component {
         mainAircraft: {},
     }
     async componentDidMount(props){
-        axios.get('http://localhost:8080/list')
+        axios.get('https://heli-info.herokuapp.com/list')
         .then(res=>{this.setState({data: res.data})})
         .catch(console.error("An error occured with the list."))
 
-        axios.get('http://localhost:8080/Chinook')
+        axios.get('https://heli-info.herokuapp.com/Chinook')
         .then(res=>{this.setState({mainAircraft: res.data})})
     }
     componentDidUpdate(prevProps){
         if(this.props.match.params !== prevProps.match.params){
-            axios.get(`http://localhost:8080/${this.props.match.params.modelname}`)
+            axios.get(`https://heli-info.herokuapp.com/${this.props.match.params.modelname}`)
             .then(res=>{this.setState({mainAircraft: res.data})})
             .catch(console.error())
         }
