@@ -1,0 +1,45 @@
+@import '../../styles/styles.scss';
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+
+    &__logo{
+        height: 3rem;
+        width: 9rem;
+        padding: 0rem;
+        border-left: 3.9px solid rgb(29, 33, 13);
+        border-top: 2.2px solid rgb(29, 33, 13);
+    }
+
+    &__logoImage{
+        margin: -1.5rem 0rem 0rem -1rem;
+        padding: 0rem;
+        width: 9rem;
+    }
+
+    &__rightSide{
+        border-right: 3.9px solid rgb(29, 33, 13);
+        border-bottom: 2.2px solid rgb(29, 33, 13);
+        padding: 0.5rem;
+    }
+
+    &__active{
+        border-left: 3px solid rgb(29, 33, 13);
+        border-top: 1px solid rgb(29, 33, 13);
+    }
+}
+button{
+    background-color: white;
+    border: none;
+    font-weight: 900;
+    margin: 0.5rem;
+
+    &:hover{
+        border-right: 1.5px solid blue;
+        border-bottom: 2px solid blue;
+    }
+}
+     

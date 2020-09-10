@@ -1,0 +1,22 @@
+@import '../styles/styles.scss';
+
+img{
+    max-width: 15rem;
+    max-height: 10rem;
+}
+.SideList{
+    margin-right: 0rem;
+}
+
+.OneHeli{
+    float:right;
+    margin-top: -27rem;
+
+    @include tablet{
+        margin-top: -30rem;
+    }
+
+    @include desktop {
+        margin-top: -39.999rem;
+    }
+}

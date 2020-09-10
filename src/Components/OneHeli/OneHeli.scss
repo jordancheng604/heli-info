@@ -1,0 +1,43 @@
+@import '../../styles/styles.scss';
+
+.OneHeli{
+    width: 73%;
+    height: 90%;
+    border-top: 2px solid rgb(29, 33, 13);
+    border-right: 5px solid rgb(29, 33, 13);
+    padding: 0.5rem;
+
+    &__image{
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 7rem;
+        width: 10rem;
+
+        @include tablet{
+            height: 15rem;
+            width: 19rem;
+        }
+
+        @include desktop{
+            height: 19rem;
+            width: 23rem;
+            &:hover{
+                transform:scale(1.8, 1.8);
+                transition:0.3s;
+            }
+        }
+    }
+
+    &__overview{
+        padding-left: 1rem;
+    }
+
+    &__specContainer{
+        text-align: left;
+        border-top: 1px solid black;
+    }
+
+    &__specHeading{
+        font-weight: 550;
+    }
+}

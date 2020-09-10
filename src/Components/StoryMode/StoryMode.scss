@@ -1,0 +1,21 @@
+@import '../../styles/styles.scss';
+
+.StoryMode{
+    font-weight: 100;
+}
+
+.HeliModel{
+    margin-top: -30rem;
+    float: right;
+    text-align: left;
+    padding: 0rem;
+    width: 27rem;
+}
+.skyBox1{
+    // background: url('https://threejsfundamentals.org/threejs/resources/images/daikanyama.jpg') no-repeat center center;
+    background-color: white;
+}
+
+canvas{
+    // background-color: white;
+}

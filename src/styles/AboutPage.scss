@@ -1,0 +1,17 @@
+@import '../styles/styles.scss';
+
+.about{
+    // font-weight: ;
+    text-align: left;
+    padding: 0.8rem;
+
+    @include tablet{
+        padding: 1rem;
+        width: 95%;
+    }
+
+    @include desktop{
+        width: 75%;
+        margin-left: 9rem;
+    }
+}
